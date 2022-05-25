@@ -42,6 +42,7 @@ pub mod httpd;
 #[cfg(feature = "alloc")]
 // TODO: Ideally should not need "alloc" (also for performance reasons)
 pub mod log;
+pub mod mdns;
 #[cfg(all(
     feature = "alloc",
     esp_idf_comp_mqtt_enabled,
